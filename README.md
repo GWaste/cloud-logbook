@@ -13,11 +13,11 @@
 
 ## Cloud Storage
 In our project we use Cloud Shell to create two buckets:
- 1. To create the first bucket:   
+1. To create the first bucket:   
    ```console
    $ gsutil mb gs://[OUR-PROJECT-ID]
    ```
- 2. The second bucket:
+2. The second bucket:
    ```console
    $ gsutil mb gs://[OUR-PROJECT-ID]-tf2-models
    ```
@@ -41,7 +41,7 @@ The steps to deploy the model to the AI Platform is:
 With App Engine (Standard) we deploy the [web](https://cosmic-quarter-312712.et.r.appspot.com/) version of our product.
 
 The steps to deploy is:
- 1. Open Cloud Shell, then type commands below:
+1. Open Cloud Shell, then type commands below:
    ```console
    $ mkdir wep-app
    $ cd wep-app
@@ -54,7 +54,7 @@ The steps to deploy is:
    $ sudo touch app.yaml
    $ sudo touch main.py
    ```
-   Fill the app.yaml with this and main.py with this.
+   Fill the app.yaml with [this](https://github.com/HiWaste/cloud-logbook/blob/main/resources/app.yaml) and main.py with [this](https://github.com/HiWaste/cloud-logbook/blob/main/resources/main.py).
    
 4. In root project:
    ```console
