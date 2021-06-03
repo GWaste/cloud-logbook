@@ -56,37 +56,39 @@ The steps to deploy is:
    ```
    Fill the app.yaml with this and main.py with this.
    
-3. In root project:
-    ```console
+4. In root project:
+   ```console
    $ cd hiwaste_web
    $ sudo vim settings.py
    ```
-4. In settings.py, search ALLOWED_HOST = [], then chage as:
+5. In settings.py, search ALLOWED_HOST = [], then chage as:
    ```console
    ALLOWED_HOST = ["*"]
    ```
    Save settings.py.
    
-5. Return to root project: 
+6. Return to root project: 
    ```console
    $ cd ..
    ```
-6.  Test the web before deploy, with steps:
+7.  Test the web before deploy, with steps:
    ```console
    $ virtualenv env
    $ source env/bin/activate
    $ pip install -r requirements.txt
    ```
-   Wait until the dependencies is installed, then type:
+    Wait until the dependencies is installed, then type:
    ```console
    $ python3 manage.py runserver
    ```
     Click web preview on Cloud Shell, change port with: 8000, then  click Change and Preview. If the web running as well it's time to deploy!
 
-7. Deploy time!
+8. Deploy time!
    Press Ctrl + C to stop web preview and then type:
     ```console
    $ gcloud app deploy
    ```
    And select the region and wait until done.
-8. Result: https://cosmic-quarter-312712.et.r.appspot.com/product/3
+9. Result: https://cosmic-quarter-312712.et.r.appspot.com/product/3
+
+## Cloud Functions
