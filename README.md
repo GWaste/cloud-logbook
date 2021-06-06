@@ -1,5 +1,5 @@
-
-# Cloud Logbook
+<h1 align="center">GWaste: Get to know your Waste</h1>
+<h3 align="center">Waste Cloud Logbook</h3>
 
 ## Contents
 - [Gwaste Architecture](#gwaste-architecture)
@@ -71,24 +71,31 @@ The steps to deploy is:
    ```console
    $ cd ..
    ```
-7.  Test the web before deploy, with steps:
-   ```console
+
+7. Test the web before deploy, with steps:
+
+   ```sh
    $ virtualenv env
    $ source env/bin/activate
    $ pip install -r requirements.txt
+
    ```
-    Wait until the dependencies is installed, then type:
-   ```console
+   Wait until the dependencies is installed, then type:
+
+   ```sh
    $ python3 manage.py runserver
    ```
-    Click web preview on Cloud Shell, change port with: 8000, then  click Change and Preview. If the web running as well it's time to deploy!
+   
+   Click web preview on Cloud Shell, change port with: 8000, then  click Change and Preview. If the web running as well it's time to deploy!
 
 8. Deploy time!
+   
    Press Ctrl + C to stop web preview and then type:
-    ```console
+   
+   ```console
    $ gcloud app deploy
    ```
+   
    And select the region and wait until done.
-9. Result: https://cosmic-quarter-312712.et.r.appspot.com/product/3
 
-## Cloud Functions
+9. Result: https://cosmic-quarter-312712.et.r.appspot.com/product/3
