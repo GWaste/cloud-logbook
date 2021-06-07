@@ -6,7 +6,6 @@
 - [Cloud Storage](#cloud-storage)
 - [AI Platform](#ai-platform)
 - [App Engine](#app-engine)
-- [Cloud Functions](#app-engine)
 
 ## Gwaste Architecture
 ![image](https://drive.google.com/uc?export=view&id=1pewrx5tOYPKZOAJ9ZhDVpuSTrQovqc-S)
@@ -99,3 +98,10 @@ The steps to deploy is:
    And select the region and wait until done.
 
 9. Result: https://cosmic-quarter-312712.et.r.appspot.com/product/3
+
+
+## Acknowledgements
+
+ - [Bangkit](http://bangkit.academy/)
+ - [GWaste](https://github.com/GWaste/Introduction)
+
